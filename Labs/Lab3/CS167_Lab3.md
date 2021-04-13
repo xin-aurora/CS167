@@ -184,6 +184,7 @@ Note: For Windows users, run the above two commands in an Ubuntu window rather t
 ```console
 yarn jar target/<*.jar> nasa_19950801.tsv filter_output.tsv 200
 ```
+Note: Run the three commands in Lab 2 Step IV (namenode formate and start namenode, datanode) before using yarn command. Otherwise, you might have the java.net.ConnectException.
 
 6. If you did not do already, start HDFS as described in Lab 2 and run your program on an input file that is stored in HDFS and produce the output in HDFS.
 
@@ -256,7 +257,7 @@ public class Aggregation {
 ```
 2. Implement the TODO items to make the desired logic. Hint: look at the WordCount example.
 3. Run your program on the file `nasa_19950801.tsv` and check the output directory. (Q9) How many files are produced in the output directory and how many lines are there in each file? (Q10) Explain these numbers based on the number of reducers and number of response codes in the input file.
-4. Run your program on the file `nasa_19950630.22-19950728.12.tsv`. (Q11) How many files are produced in the output directory and how many lines are there in each file? (Q12) Explain these numbers based on the number of reducers and number of response codes in the input file.
+4. Run your program on the file `19950630.23-19950801.00.tsv`. (Q11) How many files are produced in the output directory and how many lines are there in each file? (Q12) Explain these numbers based on the number of reducers and number of response codes in the input file.
 4. Run your program on the output of the `Filter` operation with response code `200`. (Q13) How many files are produced in the output directory and how many lines are there in each file? (Q14) Explain these numbers based on the number of reducers and number of response codes in the input file.
 
 ### VI. Submission (15 minutes)
